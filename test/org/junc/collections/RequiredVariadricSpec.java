@@ -1,7 +1,7 @@
-package org.idiomot.collections;
+package org.junc.collections;
 
-import junit.framework.Assert;
 import org.junit.Test;
+
 import static junit.framework.TestCase.assertEquals;
 
 public class RequiredVariadricSpec {

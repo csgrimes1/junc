@@ -1,7 +1,7 @@
-package org.idiomot.patterns;
+package org.junc.patterns;
 
 
-import org.idiomot.function.NoArgFunctionWithThrows;
+import org.junc.function.NoArgFunctionWithThrows;
 import org.junit.Test;
 import static junit.framework.TestCase.assertEquals;
 
@@ -20,10 +20,8 @@ public class TrySpec {
     @Test
     public void catchBlockSpec(){
         assertEquals(1, countRuntimeExceptions(  ()  -> {
-                    if( 1 < 10 )
-                        throw new Exception("What?");
-                    return 2;
-                }
+                throw new Exception("What?");
+            }
         ));
     }
 }

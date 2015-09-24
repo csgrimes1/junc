@@ -1,6 +1,6 @@
-package org.idiomot.patterns;
+package org.junc.patterns;
 
-import org.idiomot.collections.RequiredVariadric;
+import org.junc.collections.RequiredVariadric;
 
 import java.util.Optional;
 

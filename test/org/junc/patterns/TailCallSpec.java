@@ -1,12 +1,11 @@
-package org.idiomot.patterns;
+package org.junc.patterns;
 
-import org.idiomot.patterns.TailCall;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
 public class TailCallSpec {
-
+    //Fib sequence
     //0 1 2 3 5 8 13 21
     //  0 1 2 3 4  5  6
 

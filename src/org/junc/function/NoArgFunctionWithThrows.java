@@ -1,4 +1,4 @@
-package org.idiomot.function;
+package org.junc.function;
 
 @FunctionalInterface
 public interface NoArgFunctionWithThrows<R> {

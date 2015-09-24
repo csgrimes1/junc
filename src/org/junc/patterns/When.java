@@ -1,4 +1,4 @@
-package org.idiomot.patterns;
+package org.junc.patterns;
 
 import com.sun.istack.internal.NotNull;
 

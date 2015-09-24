@@ -1,13 +1,12 @@
-package org.idiomot.patterns;
+package org.junc.patterns;
 
-import junit.framework.Assert;
 import org.junit.Test;
 
 import java.util.Optional;
 
-import static org.idiomot.patterns.Case.caseMatch;
-import static org.idiomot.patterns.When.defaultTo;
-import static org.idiomot.patterns.When.when;
+import static org.junc.patterns.Case.caseMatch;
+import static org.junc.patterns.When.defaultTo;
+import static org.junc.patterns.When.when;
 import static junit.framework.TestCase.assertEquals;
 
 public class CaseSpec {
@@ -58,4 +57,5 @@ public class CaseSpec {
         ).get();
         assertEquals(2L, res);
     }
+
 }

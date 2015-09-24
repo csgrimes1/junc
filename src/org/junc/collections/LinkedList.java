@@ -1,7 +1,7 @@
-package org.idiomot.collections;
+package org.junc.collections;
 
-import org.idiomot.patterns.TailCall;
-import org.idiomot.patterns.Try;
+import org.junc.patterns.TailCall;
+import org.junc.patterns.Try;
 
 import java.util.*;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package org.idiomot.collections;
+package org.junc.collections;
 
 import org.junit.Test;
 

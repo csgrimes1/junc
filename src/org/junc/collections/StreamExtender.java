@@ -1,9 +1,9 @@
-package org.idiomot.collections;
+package org.junc.collections;
 
 import java.util.stream.Stream;
 
 public class StreamExtender<T> {
-    Stream<T> _stream;
+    final Stream<T> _stream;
 
     private StreamExtender(Stream<T> innerStream){
         _stream = innerStream;

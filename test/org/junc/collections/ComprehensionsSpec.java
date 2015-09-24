@@ -1,12 +1,12 @@
-package org.idiomot.collections;
+package org.junc.collections;
 
+import org.junc.patterns.Maybe;
 import org.junit.Test;
 
-import java.util.Optional;
 import java.util.stream.Stream;
 
 import static junit.framework.TestCase.assertEquals;
-import static org.idiomot.collections.Comprehensions.permutations;
+import static org.junc.collections.Comprehensions.permutations;
 
 public class ComprehensionsSpec {
     @Test
@@ -52,6 +52,19 @@ public class ComprehensionsSpec {
                 Stream.of("1", "2"),
                 Stream.of(3.0, 1.0, 2.0),
                 Stream.empty(),
+                (h, t, o, d, opt) -> h + t + o + d
+        ).count();
+        assertEquals(0, count);
+    }
+
+    @Test
+    public void permuteWithMaybeTest(){
+        final long count = permutations(
+                Stream.of(100, 200, 300),
+                Stream.of(10L, 20L, 30L),
+                Stream.of("1", "2"),
+                Stream.of(3.0, 1.0, 2.0),
+                Maybe.<String>empty().stream(),
                 (h, t, o, d, opt) -> h + t + o + d
         ).count();
         assertEquals(0, count);

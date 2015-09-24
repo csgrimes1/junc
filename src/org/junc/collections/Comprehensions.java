@@ -1,17 +1,21 @@
-package org.idiomot.collections;
+package org.junc.collections;
 
-import org.idiomot.function.Function2;
-import org.idiomot.function.Function3;
-import org.idiomot.function.Function4;
-import org.idiomot.function.Function5;
-import org.idiomot.patterns.Try;
-import sun.awt.image.ImageWatched;
+import org.junc.function.Function2;
+import org.junc.function.Function3;
+import org.junc.function.Function4;
+import org.junc.function.Function5;
+import org.junc.patterns.Try;
 
 import java.util.Arrays;
 import java.util.function.Function;
 import java.util.stream.Stream;
 
-
+/**
+ * Semantically similar to the Scala 'for' comprehension. Instead of creating a method named 'for', it uses the
+ * term 'permutation' to better indicate that all combinations of all stream members will be passed to the
+ * generator function. A stream formed from Maybe.stream() can be used as a 'boolean step' in the sequence,
+ * making it possible to zero out the permutations when the Maybe is unset.
+ */
 public class Comprehensions {
 
     public static<T1, T2, R> Stream<R> permutations(Stream<T1> s1, Stream<T2> s2, Function2<T1, T2, R> generator)
@@ -20,7 +24,6 @@ public class Comprehensions {
             return generator.apply((T1)ar[0], (T2)ar[1]);
         };
         return permutationsCore(gen2, s1, s2);
-
     }
 
     public static<T1, T2, T3, R> Stream<R> permutations(Stream<T1> s1, Stream<T2> s2, Stream<T3> s3, Function3<T1, T2, T3, R> generator)

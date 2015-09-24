@@ -1,6 +1,6 @@
-package org.idiomot.patterns;
+package org.junc.patterns;
 
-import org.idiomot.function.NoArgFunctionWithThrows;
+import org.junc.function.NoArgFunctionWithThrows;
 
 public class Try {
     public static<R> R catchAndThrow( NoArgFunctionWithThrows<R> codeBlock ){
@@ -11,8 +11,4 @@ public class Try {
             throw new RuntimeException(x);
         }
     }
-
-
-    
-
 }
