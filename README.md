@@ -123,7 +123,7 @@ When I went to start coding examples, I went straight to the unit tests for this
 I illustrate what values are expected from the code?" That was easy to answer - use the unit tests as the examples! This
 complemented a tendency toward laziness when it comes to documentation! It's a win/win situation.
 
-The unit tests' source code can be found [here](test/org/junq).
+The unit tests' source code can be found [here](tree/master/test/org/junq).
 
 ##Notes
 
