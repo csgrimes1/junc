@@ -107,13 +107,14 @@ effort and without this library. Here's how:
         }
     }
     
-Very clean! There are limitations, though. You must declare a function or a block lambda to implement this code. Also,
+Very clean! There are limitations, though. You must declare a function or a block lambda to implement this code. 
+It introduces a redundancy, with the *return* reserved word repeating in every ladder rung. Also,
 the switch block does not support powerful pattern matching - just straight equality comparisons.
 
 **Void** control of flow idioms are a bit of a missed opportunity. Note that the terniary **?** operation is often
 used in return statements, but this is not possible with **switch** or **if** (except when implemented like the last example!). Thankfully,
 the introduction of map/fold operations on **Stream** allows replacement of loops with functional transformations. The
-*junq* library implements ways to code logical control of flow in a more functional manner.  The *junc* pattern matching
+*junc* library implements ways to code logical control of flow in a more functional manner.  The *junc* pattern matching
 API **Case.caseMatch(...)** enables expressive Boolean logic resulting in a return value. It's a 
 superhero version of **switch** !
 
